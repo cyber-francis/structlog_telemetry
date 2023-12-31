@@ -1,4 +1,4 @@
-# StructLog-Telemetry
+# Structlog-Telemetry
 A very simple custom structured logger
 
 ## How To Use
