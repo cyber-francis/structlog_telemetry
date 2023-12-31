@@ -1,1 +1,1 @@
-# StructuredLogger
+# StructLog-Telemetry

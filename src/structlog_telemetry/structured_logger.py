@@ -1,5 +1,5 @@
 import structlog
-from singleton_base import Singleton
+from .singleton_base import Singleton
 import logging
 import os
 

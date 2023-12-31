@@ -1,10 +1,14 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-requirements-txt"]
 build-backend = "hatchling.build"
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
 
 [project]
 name = "structlog_telemetry"
-version = "0.0.3"
+version = "0.0.7"
 authors = [
   { name="Francis Obiagwu", email="cyber.francis@comcast.net" },
 ]
@@ -16,6 +20,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dynamic = ["dependencies"]
 
 [project.urls]
 Homepage = "https://github.com/cyber-francis/structlog_telemetry"
