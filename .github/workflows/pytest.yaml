@@ -2,10 +2,10 @@ name: unittests
 on: 
   pull_request:
     branches: [main]
-  permissions:
-    id-token: write
-    contents: write
-    pull-requests: write
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
 
   jobs:
     unittests:
