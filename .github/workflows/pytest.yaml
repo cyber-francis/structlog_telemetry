@@ -25,4 +25,4 @@ jobs:
 
       - name: run unittests
         run: |
-          pytest
+          PYTHONPATH=src python3 -m pytest --verbose
