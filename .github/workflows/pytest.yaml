@@ -19,6 +19,10 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: install dependencies
+        run: |
+          python3 -m pip install pytest
+
       - name: run unittests
         run: |
           PYTHONPATH=src python3 -m pytest --verbose
