@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "structlog_telemetry"
+version = "0.0.3"
+authors = [
+  { name="Francis Obiagwu", email="cyber.francis@comcast.net" },
+]
+description = "A Structured Logger For Telemetry"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/cyber-francis/structlog_telemetry"
+Issues = "https://github.com/cyber-francis/structlog_telemetry/issues"
