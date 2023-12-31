@@ -7,3 +7,4 @@ def test_structured_logger():
     logger.warning({"EVENT": {"TYPE": "ACCESS", "NAME": "USER_NOT_FOUND"}})
     logger.error({"EVENT": {"TYPE": "ACCESS", "NAME": "USER_NOT_FOUND"}})
     logger.exception({"EVENT": {"TYPE": "ACCESS", "NAME": "USER_NOT_FOUND"}})
+    logger.critical({"EVENT": {"TYPE": "ACCESS", "NAME": "USER_NOT_FOUND"}})
