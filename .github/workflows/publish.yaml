@@ -33,3 +33,21 @@ jobs:
           repository-url: https://test.pypi.org/legacy/
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
+
+      - name: Test Install
+        run: |
+          python3 -m pip install -i https://test.pypi.org/simple/ structlog-telemetry
+      - name: Test Use
+        run: |
+          python3 - <<EOF
+          from structlog_telemetry.structured_logger import StructuredLogger
+
+          APP_NAME = "APP_X"
+          APP_VERSION = "v0.0.1"
+          logger = StructuredLogger(APP_NAME, APP_VERSION)
+
+
+          logger.info({"KEY_NOT_FOUND": "SEARCHED_KEY"})
+          logger.warning({"LATENCY": "30"})
+          logger.error({"SERVER_TIMEOUT": {"SERVER": "test.com", "TIMED_OUT_AFTER": 10}})
+          EOF
