@@ -5,6 +5,8 @@ build-backend = "hatchling.build"
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
 
 [project]
 name = "structlog_telemetry"
