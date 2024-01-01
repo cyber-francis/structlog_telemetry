@@ -35,7 +35,7 @@ jobs:
 
       - name: Test Install
         run: |
-          python3 -m pip install --no-cache-dir --upgrade -i https://test.pypi.org/simple/ structlog-telemetry
+          python3 -m pip install --no-cache-dir -i https://test.pypi.org/simple/ structlog-telemetry
       - name: Test Use
         run: |
           python3 - <<EOF
