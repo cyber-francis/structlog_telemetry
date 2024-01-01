@@ -1,10 +1,7 @@
-<div align="center">
-<p align="center">
-<img src="docs/structlog_telemetery.drawio.png">
-</p>
-
+# Structlog-Telemetry
 Structlog-Telemetry is a very simple custom Python structured logger library.
-</div>
+
+[![unittests](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/pytest.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/pytest.yaml)[![Publish to PyPI](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/publish.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/publish.yaml) [![release](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/release.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/release.yaml)
 
 ## Installation
 ```bash
@@ -33,9 +30,3 @@ Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-
-
-Next Steps: update the workflow
-push -> build -> push to pypi test -> create release
-merge release -> build -> push to pypi
