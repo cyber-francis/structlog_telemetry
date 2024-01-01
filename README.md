@@ -1,24 +1,33 @@
 <div align="center">
 <p align="center">
-<img src="structlog_telemetery.drawio.png">
+<img src="docs/structlog_telemetery.drawio.png">
 </p>
 
-A very simple custom structured logger
+Structlog-Telemetry is a very simple custom Python structured logger library.
 </div>
 
-## How To Use
-### Step 1 - Install
-```python3 -m pip install -i https://test.pypi.org/simple/ structlog-telemetry==0.0.7```
+## Installation
+```bash
+python3 -m pip install -i https://test.pypi.org/simple/ structlog-telemetry==0.0.7
+```
 
-### Step 2 - Import and Use
+## Usage
+
+```python
+from structlog_telemetry.structured_logger import StructuredLogger
+
+APP_NAME = "APP_X"
+APP_VERSION = "v0.0.1"
+logger = StructuredLogger(APP_NAME, APP_VERSION)
+
+
+logger.info({"KEY_NOT_FOUND": "SEARCHED_KEY"})
+logger.warning({"LATENCY": "30"})
+logger.error({"SERVER_TIMEOUT": {"SERVER": "test.com", "TIMED_OUT_AFTER": 10}})
 ```
->>> from structlog_telemetry import structured_logger
->>> logger = structured_logger.StructuredLogger(app_name="simple_logger", app_version="v0.0.1")
->>> logger.info({"EVENT": {"TYPE": "ACCESS", "NAME": "USER_NOT_FOUND"}})
-2023-12-31 16:22:30 [info     ] {'APP_NAME': 'simple_logger', 'APP_VERSION': 'v0.0.1', 'EVENT': {'EVENT': {'TYPE': 'ACCESS', 'NAME': 'USER_NOT_FOUND'}}}
-```
+<img src="docs/log.png">
+
 
 Next Steps: update the workflow
 push -> build -> push to pypi test -> create release
 merge release -> build -> push to pypi
-

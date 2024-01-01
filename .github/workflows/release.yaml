@@ -1,6 +1,6 @@
 on:
   push:
-    branches: 
+    branches:
       - main
 permissions:
   id-token: write
@@ -9,10 +9,10 @@ permissions:
 
 name: release
 
-jobs: 
+jobs:
   release-please:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
