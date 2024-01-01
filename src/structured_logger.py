@@ -10,23 +10,48 @@ class StructuredLogger(Singleton):
     __log_name = None
     __logger = None
 
-    def __init__(self, app_name, app_version) -> None:
+    def __init__(self, app_name, app_version, json_renderer=False) -> None:
         # configure structlog to output structured log in JSON format
         StructuredLogger.__app_name = app_name
         StructuredLogger.__app_version = app_version
         StructuredLogger.__log_name = app_name
+        StructuredLogger.__json_renderer = json_renderer
         log_level = getattr(logging, os.environ.get("LOG_LEVEL", "INFO").upper())
         structlog.configure(
             wrapper_class=structlog.make_filtering_bound_logger(log_level)
         )
+        if StructuredLogger.__json_renderer:
+            StructuredLogger.configure_json_renderer()
+
         StructuredLogger.__logger = structlog.get_logger(app_name)
 
+    def set_process_id(_, __, event_dict):
+        event_dict["process_id"] = os.getpid()
+        return event_dict
+
+    def configure_json_renderer():
+        structlog.configure(
+            processors=[
+                structlog.processors.add_log_level,
+                structlog.processors.TimeStamper(fmt="iso"),
+                StructuredLogger.set_process_id,
+                structlog.processors.JSONRenderer(),
+            ]
+        )
+
     def create_kv(self, *args):
-        return {
-            "APP_NAME": self.__app_name,
-            "APP_VERSION": self.__app_version,
-            "EVENT": args[0][0],
-        }
+        if StructuredLogger.__json_renderer:
+            return {
+                "app_name": self.__app_name,
+                "app_version": self.__app_version,
+                "event": args[0][0],
+            }
+        else:
+            return {
+                "app_name": self.__app_name,
+                "app_version": self.__app_version,
+                "issue": args[0][0],
+            }
 
     def debug(self, *args):
         self.__logger.debug(self.create_kv(args))
