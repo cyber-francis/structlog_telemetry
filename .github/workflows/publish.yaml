@@ -1,9 +1,7 @@
 # Build the package and publish it to PyPI after tests pass.
 name: Publish to PyPI
 on:
-  push:
-    branches: [main]
-
+  workflow_call:
 
 permissions:
   id-token: write
