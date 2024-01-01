@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
 
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
 jobs:
   tests:
     uses: ./.github/workflows/pytest.yaml
