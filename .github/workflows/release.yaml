@@ -6,6 +6,8 @@ permissions:
   id-token: write
   contents: write
   pull-requests: write
+  actions: write
+  security-events: write
 
 name: release
 
@@ -42,3 +44,4 @@ jobs:
     needs: release
     if: ${{ needs.release.outputs.release_created }}
     uses: ./.github/workflows/publish.yaml
+    secrets: inherit
