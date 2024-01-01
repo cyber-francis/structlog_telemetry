@@ -17,3 +17,4 @@ A very simple custom structured logger
 >>> logger.info({"EVENT": {"TYPE": "ACCESS", "NAME": "USER_NOT_FOUND"}})
 2023-12-31 16:22:30 [info     ] {'APP_NAME': 'simple_logger', 'APP_VERSION': 'v0.0.1', 'EVENT': {'EVENT': {'TYPE': 'ACCESS', 'NAME': 'USER_NOT_FOUND'}}}
 ```
+
