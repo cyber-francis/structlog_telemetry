@@ -5,7 +5,7 @@ Structlog-Telemetry is a very simple custom Python structured logger library.
 
 ## Installation
 ```bash
-python3 -m pip install -i https://test.pypi.org/simple/ structlog-telemetry==0.0.7
+python3 -m pip install -i https://test.pypi.org/simple/ structlog-telemetry
 ```
 
 ## Usage
