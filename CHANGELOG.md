@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1](https://github.com/cyber-francis/structlog_telemetry/compare/v0.2.0...v0.0.1) (2024-01-01)
+
+
+### chore
+
+* release 0.0.1 ([cd1e991](https://github.com/cyber-francis/structlog_telemetry/commit/cd1e991edc02085339bed3c0df347f66d6b7a0bd))
+
 ## [0.2.0](https://github.com/cyber-francis/structlog_telemetry/compare/v0.1.0...v0.2.0) (2024-01-01)
 
 
