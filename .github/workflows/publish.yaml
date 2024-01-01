@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
 
+
 permissions:
   id-token: write
   contents: write
@@ -12,6 +13,8 @@ permissions:
 jobs:
   tests:
     uses: ./.github/workflows/pytest.yaml
+  relese:
+    uses: ./.github/workflows/release.yaml
   publish:
     name: publish
     needs: [tests] # require tests to pass before deploy runs
