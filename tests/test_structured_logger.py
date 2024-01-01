@@ -1,4 +1,4 @@
-from src.structured_logger import StructuredLogger
+from src.structlog_telemetry.structured_logger import StructuredLogger
 import pytest
 
 
