@@ -18,3 +18,7 @@ A very simple custom structured logger
 2023-12-31 16:22:30 [info     ] {'APP_NAME': 'simple_logger', 'APP_VERSION': 'v0.0.1', 'EVENT': {'EVENT': {'TYPE': 'ACCESS', 'NAME': 'USER_NOT_FOUND'}}}
 ```
 
+Next Steps: update the workflow
+push -> build -> push to pypi test -> create release
+merge release -> build -> push to pypi
+
