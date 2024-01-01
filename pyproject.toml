@@ -10,7 +10,7 @@ packages = ["src"]
 
 [project]
 name = "structlog_telemetry"
-version = "0.0.2"
+version = "0.0.18"
 authors = [
   { name="Francis Obiagwu", email="cyber.francis@comcast.net" },
 ]
