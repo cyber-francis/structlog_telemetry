@@ -1,4 +1,5 @@
-# Structlog-Telemetry
+<img src="structlog_telemetery.drawio.png">
+
 A very simple custom structured logger
 
 ## How To Use
