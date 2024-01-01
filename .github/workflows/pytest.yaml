@@ -11,9 +11,10 @@ jobs:
   unittests:
     runs-on: ${{ matrix.os }}
     strategy:
-    matrix:
-      os: [ubuntu-22.04, ubuntu-20.04]
-      python-version: ["3.9", "3.10", "3.11"]
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
+        python-version: ["3.9", "3.10", "3.11"]
+
     steps:
       - name: checkout code
         uses: actions/checkout@v3
