@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.12](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.11...v0.0.12) (2024-01-01)
+
+
+### Bug Fixes
+
+* updated readme ([fbec4f5](https://github.com/cyber-francis/structlog_telemetry/commit/fbec4f5508fc7311559c62f7d7531a6e38e95b0a))
+
 ## [0.0.11](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.10...v0.0.11) (2024-01-01)
 
 
