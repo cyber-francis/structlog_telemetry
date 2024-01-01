@@ -11,12 +11,9 @@ permissions:
 jobs:
   tests:
     uses: ./.github/workflows/pytest.yaml
-  relese:
-    needs: [tests]
-    uses: ./.github/workflows/release.yaml
   publish:
     name: publish
-    needs: [release] # require tests to pass before deploy runs
+    needs: [tests] # require tests to pass before deploy runs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
