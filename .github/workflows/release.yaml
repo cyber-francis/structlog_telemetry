@@ -9,7 +9,7 @@ permissions:
   actions: write
   security-events: write
 
-name: release
+name: Release & Publish to PyPI
 
 jobs:
   release:
