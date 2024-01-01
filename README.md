@@ -1,6 +1,10 @@
+<div align="center">
+<p align="center">
 <img src="structlog_telemetery.drawio.png">
+</p>
 
 A very simple custom structured logger
+</div>
 
 ## How To Use
 ### Step 1 - Install
