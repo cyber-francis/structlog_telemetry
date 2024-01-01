@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.9](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.8...v0.0.9) (2024-01-01)
+
+
+### chore
+
+* release 0.0.8 ([d80b996](https://github.com/cyber-francis/structlog_telemetry/commit/d80b99609d7aed6757191cc8f1b76ccd98eff81b))
+* release 0.0.9 ([6a56c25](https://github.com/cyber-francis/structlog_telemetry/commit/6a56c255f16464b6be6b68d2128258f30f69386d))
+* release 0.0.9 ([d814123](https://github.com/cyber-francis/structlog_telemetry/commit/d814123e1b1120a67efefcca0924b8b177d93ec4))
+
+
+### Features
+
+* added pypi auto publish ([9312e38](https://github.com/cyber-francis/structlog_telemetry/commit/9312e38eccaa2faaf8d2b9365f3d7b7b8734f464))
+
 ## [0.0.8](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.8...v0.0.8) (2024-01-01)
 
 
