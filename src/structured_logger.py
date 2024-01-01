@@ -50,7 +50,7 @@ class StructuredLogger(Singleton):
             return {
                 "app_name": self.__app_name,
                 "app_version": self.__app_version,
-                "issue": args[0][0],
+                "details": args[0][0],
             }
 
     def debug(self, *args):
