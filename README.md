@@ -1,7 +1,7 @@
 # Structlog-Telemetry
 Structlog-Telemetry is a very simple custom Python structured logger library.
 
-[![unittests](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/pytest.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/pytest.yaml)[![Publish to PyPI](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/publish.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/publish.yaml) [![release](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/release.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/release.yaml)
+[![unittests](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/pytest.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/pytest.yaml)[![release](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/release.yaml/badge.svg)](https://github.com/cyber-francis/structlog_telemetry/actions/workflows/release.yaml)
 
 ## Installation
 ```bash
