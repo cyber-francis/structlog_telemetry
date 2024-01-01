@@ -6,6 +6,8 @@ permissions:
   id-token: write
   contents: write
   pull-requests: write
+  actions: write
+  security-events: write
 
 name: release
 
