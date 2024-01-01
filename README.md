@@ -22,7 +22,7 @@ logger.info({"KEY_NOT_FOUND": "SEARCHED_KEY"})
 logger.warning({"LATENCY": "30"})
 logger.error({"SERVER_TIMEOUT": {"SERVER": "test.com", "TIMED_OUT_AFTER": 10}})
 ```
-<img src="https://github.com/cyber-francis/structlog_telemetry/blob/main/docs/log.png">
+<img src="https://raw.githubusercontent.com/cyber-francis/structlog_telemetry/main/docs/log.png">
 
 ## Contributing
 
