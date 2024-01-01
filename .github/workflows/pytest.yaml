@@ -1,4 +1,4 @@
-name: unittests
+name: Unittests
 on:
   pull_request:
     branches: [main]
@@ -9,7 +9,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  unittests:
+  pytest:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
