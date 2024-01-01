@@ -6,7 +6,7 @@ permissions:
   id-token: write
   contents: write
   pull-requests: write
-  
+
 name: release
 
 jobs: 
@@ -19,7 +19,7 @@ jobs:
           release-type: python
           package-name: structlog_telemetry
           draft-pull-request: true
-          changelog-types: '[{"type":"feat", "section":"Features", "hidden":false}, {"type":"fix", "section":"Bug Fixes", "hidden":false}]'
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false}]'
 
       - uses: actions/checkout@v3
       - name: tag major and minor versions
@@ -31,7 +31,7 @@ jobs:
           git tag -d v${{ steps.release.outputs.major }} || true
           git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
           git push origin :v${{ steps.release.outputs.major }} || true
-          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.output.minor }} || true
+          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
           git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
           git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
           git push origin v${{ steps.release.outputs.major }}
