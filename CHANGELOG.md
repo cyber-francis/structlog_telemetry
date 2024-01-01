@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.0](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.16...v0.1.0) (2024-01-01)
+
+
+### Features
+
+* updated workflow ([07c73a1](https://github.com/cyber-francis/structlog_telemetry/commit/07c73a177f9f9973a66c77820d92617018a873a4))
+* updated workflow ([94adca9](https://github.com/cyber-francis/structlog_telemetry/commit/94adca9fdee80c12bde4f5933b2f3f911ed49f1f))
+* updated workflow ([492cb04](https://github.com/cyber-francis/structlog_telemetry/commit/492cb04393a7b4e1a59a9f05d016a86acf77a599))
+* updated workflow ([817d247](https://github.com/cyber-francis/structlog_telemetry/commit/817d247f9c92e4cc7ae9f46ca9329e4a4e625468))
+
+
+### Bug Fixes
+
+* updated logging with json renderer ([58fbf8e](https://github.com/cyber-francis/structlog_telemetry/commit/58fbf8eefa331789cc67ee39621e6dbfd25a7673))
+* updated logging with json renderer ([baabaa1](https://github.com/cyber-francis/structlog_telemetry/commit/baabaa1e1e1ca4c7d188e80fa568828c58736288))
+
 ## [0.0.16](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.15...v0.0.16) (2024-01-01)
 
 
