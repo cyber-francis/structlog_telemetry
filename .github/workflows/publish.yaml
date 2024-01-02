@@ -39,7 +39,7 @@ jobs:
       - name: Test Usage
         run: |
           python3 - <<EOF
-          structlog_telemetry.structlog_telemetry import StructLogTelemetry
+          from structlog_telemetry.structlog_telemetry import StructLogTelemetry
 
           APP_NAME = "APP_X"
           APP_VERSION = "v0.0.1"
