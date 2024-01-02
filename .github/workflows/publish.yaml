@@ -36,7 +36,7 @@ jobs:
       - name: Test Install
         run: |
           python3 -m pip install --no-cache-dir -i https://test.pypi.org/simple/ structlog-telemetry
-      - name: Test Use
+      - name: Test Usage
         run: |
           python3 - <<EOF
           from structlog_telemetry.structured_logger import StructuredLogger
