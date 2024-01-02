@@ -21,7 +21,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dynamic = ["dependencies"]
-
+keywords = ["structlog", "logging", "log", "telemetry", "observability"]
 [project.urls]
 Homepage = "https://github.com/cyber-francis/structlog_telemetry"
 Issues = "https://github.com/cyber-francis/structlog_telemetry/issues"
