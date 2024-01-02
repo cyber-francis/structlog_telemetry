@@ -11,11 +11,11 @@ python3 -m pip install -i https://test.pypi.org/simple/ structlog-telemetry
 ## Usage
 
 ```python
-from structlog_telemetry.structured_logger import StructuredLogger
+from structlog_telemetry.structlog_telemetry import StructLogTelemetry
 
 APP_NAME = "APP_X"
 APP_VERSION = "v0.0.1"
-logger = StructuredLogger(APP_NAME, APP_VERSION)
+logger = StructLogTelemetry(APP_NAME, APP_VERSION)
 
 
 logger.info({"KEY_NOT_FOUND": "SEARCHED_KEY"})
