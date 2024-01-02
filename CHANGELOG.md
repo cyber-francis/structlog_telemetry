@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.23](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.22...v0.0.23) (2024-01-02)
+
+
+### Bug Fixes
+
+* added version tracking ([1718190](https://github.com/cyber-francis/structlog_telemetry/commit/17181907ae1e4b04a0c15481268afd3e99f70fed))
+* added version tracking ([702abbd](https://github.com/cyber-francis/structlog_telemetry/commit/702abbd897c0594d0457091e3d03744a6a7be13e))
+
 ## [0.0.22](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.21...v0.0.22) (2024-01-02)
 
 
