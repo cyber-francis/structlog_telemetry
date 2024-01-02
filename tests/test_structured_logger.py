@@ -1,4 +1,4 @@
-from src.structlog_telemetry.structured_logger import StructuredLogger
+from src.structlog_telemetry.structlog_telemetry import StructLogTelemetry
 import pytest
 
 
@@ -13,7 +13,7 @@ def call_logger(logger):
 
 @pytest.mark.run(order=1)
 def test_structured_logger_with_json_renderer():
-    logger = StructuredLogger(
+    logger = StructLogTelemetry(
         app_name="simple_logger", app_version="v0.0.1", json_renderer=True
     )
     call_logger(logger)
@@ -22,7 +22,7 @@ def test_structured_logger_with_json_renderer():
 
 @pytest.mark.run(order=2)
 def test_structured_logger_without_json_renderer():
-    logger = StructuredLogger(
+    logger = StructLogTelemetry(
         app_name="simple_logger", app_version="v0.0.1", json_renderer=False
     )
     call_logger(logger)
