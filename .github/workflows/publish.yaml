@@ -29,21 +29,21 @@ jobs:
       - name: Publish
         uses: pypa/gh-action-pypi-publish@v1.8.11
         with:
-          repository-url: https://test.pypi.org/legacy/
+          # repository-url: https://test.pypi.org/legacy/
           user: __token__
           password: ${{ secrets.PYPI_API_TOKEN }}
 
       - name: Test Install
         run: |
-          python3 -m pip install --no-cache-dir -i https://test.pypi.org/simple/ structlog-telemetry
+          python3 -m pip install --no-cache-dir structlog-telemetry
       - name: Test Usage
         run: |
           python3 - <<EOF
-          from structlog_telemetry.structured_logger import StructuredLogger
+          from structlog_telemetry.structlog_telemetry import StructLogTelemetry
 
           APP_NAME = "APP_X"
           APP_VERSION = "v0.0.1"
-          logger = StructuredLogger(APP_NAME, APP_VERSION)
+          logger = StructLogTelemetry(APP_NAME, APP_VERSION, True)
 
 
           logger.info({"KEY_NOT_FOUND": "SEARCHED_KEY"})
