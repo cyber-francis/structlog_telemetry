@@ -4,7 +4,7 @@ import logging
 import os
 
 
-class StructuredLogger(Singleton):
+class StructLogTelemetry(Singleton):
     __app_name = None
     __app_version = None
     __log_name = None
@@ -12,18 +12,18 @@ class StructuredLogger(Singleton):
 
     def __init__(self, app_name, app_version, json_renderer=False) -> None:
         # configure structlog to output structured log in JSON format
-        StructuredLogger.__app_name = app_name
-        StructuredLogger.__app_version = app_version
-        StructuredLogger.__log_name = app_name
-        StructuredLogger.__json_renderer = json_renderer
+        StructLogTelemetry.__app_name = app_name
+        StructLogTelemetry.__app_version = app_version
+        StructLogTelemetry.__log_name = app_name
+        StructLogTelemetry.__json_renderer = json_renderer
         log_level = getattr(logging, os.environ.get("LOG_LEVEL", "INFO").upper())
         structlog.configure(
             wrapper_class=structlog.make_filtering_bound_logger(log_level)
         )
-        if StructuredLogger.__json_renderer:
-            StructuredLogger.configure_json_renderer()
+        if StructLogTelemetry.__json_renderer:
+            StructLogTelemetry.configure_json_renderer()
 
-        StructuredLogger.__logger = structlog.get_logger(app_name)
+        StructLogTelemetry.__logger = structlog.get_logger(app_name)
 
     def set_process_id(_, __, event_dict):
         event_dict["process_id"] = os.getpid()
@@ -34,13 +34,13 @@ class StructuredLogger(Singleton):
             processors=[
                 structlog.processors.add_log_level,
                 structlog.processors.TimeStamper(fmt="iso"),
-                StructuredLogger.set_process_id,
+                StructLogTelemetry.set_process_id,
                 structlog.processors.JSONRenderer(),
             ]
         )
 
     def create_kv(self, *args):
-        if StructuredLogger.__json_renderer:
+        if StructLogTelemetry.__json_renderer:
             return {
                 "app_name": self.__app_name,
                 "app_version": self.__app_version,
