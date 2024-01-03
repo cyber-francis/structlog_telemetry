@@ -9,21 +9,23 @@ class StructLogTelemetry(Singleton):
     __app_version = None
     __log_name = None
     __logger = None
+    __is_initialized = False
 
     def __init__(self, app_name, app_version, json_renderer=False) -> None:
-        # configure structlog to output structured log in JSON format
-        StructLogTelemetry.__app_name = app_name
-        StructLogTelemetry.__app_version = app_version
-        StructLogTelemetry.__log_name = app_name
-        StructLogTelemetry.__json_renderer = json_renderer
-        log_level = getattr(logging, os.environ.get("LOG_LEVEL", "INFO").upper())
-        structlog.configure(
-            wrapper_class=structlog.make_filtering_bound_logger(log_level)
-        )
-        if StructLogTelemetry.__json_renderer:
-            StructLogTelemetry.configure_json_renderer()
+        if not self.__is_initialized:
+            StructLogTelemetry.__app_name = app_name
+            StructLogTelemetry.__app_version = app_version
+            StructLogTelemetry.__log_name = app_name
+            StructLogTelemetry.__json_renderer = json_renderer
+            log_level = getattr(logging, os.environ.get("LOG_LEVEL", "INFO").upper())
+            structlog.configure(
+                wrapper_class=structlog.make_filtering_bound_logger(log_level)
+            )
+            if StructLogTelemetry.__json_renderer:
+                StructLogTelemetry.configure_json_renderer()
 
-        StructLogTelemetry.__logger = structlog.get_logger(app_name)
+            StructLogTelemetry.__logger = structlog.get_logger(app_name)
+            self.__is_initialized = True
 
     def set_process_id(_, __, event_dict):
         event_dict["process_id"] = os.getpid()
