@@ -3,12 +3,11 @@ from .version import __version__
 
 
 class Singleton(object):
-    _instances = {}  # dict([cls, instance])
+    _instance = None
 
     def __new__(cls, *args, **kwargs) -> dict:
-        if cls not in cls._instances:
-            instance = super().__new__(cls)
-            cls._instances[cls] = instance
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
             print_banner(cls.__name__, __version__)
 
-        return cls._instances[cls]
+        return cls._instance
