@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.29](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.28...v0.0.29) (2024-01-03)
+
+
+### Bug Fixes
+
+* updated singleton ([40abc36](https://github.com/cyber-francis/structlog_telemetry/commit/40abc36855f91aae6fe9092be847b9f047118353))
+* updated structlog telemetry class ([e509335](https://github.com/cyber-francis/structlog_telemetry/commit/e509335fcf9ef62dfbb26e2d0713f6c3824ce6f0))
+
 ## [0.0.28](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.27...v0.0.28) (2024-01-02)
 
 

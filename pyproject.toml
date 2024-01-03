@@ -8,7 +8,7 @@ files = ["requirements.txt"]
 
 [project]
 name = "structlog_telemetry"
-version = "0.0.28"
+version = "0.0.29"
 authors = [
   { name="Francis Obiagwu", email="cyber.francis@comcast.net" },
 ]
