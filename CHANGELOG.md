@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.30](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.29...v0.0.30) (2024-06-04)
+
+
+### Bug Fixes
+
+* updated banner ([3d733e3](https://github.com/cyber-francis/structlog_telemetry/commit/3d733e3b0bbdbf9ac7e066021c55be857054a324))
+
 ## [0.0.29](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.28...v0.0.29) (2024-01-03)
 
 
