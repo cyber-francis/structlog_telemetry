@@ -26,6 +26,10 @@ class StructLogTelemetry(Singleton):
 
             StructLogTelemetry.__logger = structlog.get_logger(app_name)
             self.__is_initialized = True
+            self.print_banner()
+
+    def print_banner(self):
+        print(f"{self.__app_name} 📟 {self.__app_version}")
 
     def set_process_id(_, __, event_dict):
         event_dict["process_id"] = os.getpid()
