@@ -76,3 +76,5 @@ class StructLogTelemetry(Singleton):
 
     def critical(self, *args):
         self.__logger.critical(self.create_kv(args))
+
+
