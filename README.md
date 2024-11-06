@@ -18,9 +18,9 @@ APP_VERSION = "v0.0.1"
 logger = StructLogTelemetry(APP_NAME, APP_VERSION)
 
 
-logger.info({"KEY_NOT_FOUND": "SEARCHED_KEY"})
-logger.warning({"LATENCY": "30"})
-logger.error({"SERVER_TIMEOUT": {"SERVER": "test.com", "TIMED_OUT_AFTER": 10}})
+logger.info("hello world")
+logger.warning("Hello world")
+logger.error("hello world")
 ```
 <img src="https://raw.githubusercontent.com/cyber-francis/structlog_telemetry/main/docs/log.png">
 
