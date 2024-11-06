@@ -14,7 +14,7 @@ def call_logger(logger):
 @pytest.mark.run(order=1)
 def test_structured_logger_with_json_renderer():
     logger = StructLogTelemetry(
-        app_name="simple_logger", app_version="v0.0.1", json_renderer=True
+        app_name="simple_logger", app_version="v0.0.1"
     )
     call_logger(logger)
     del logger
@@ -23,6 +23,6 @@ def test_structured_logger_with_json_renderer():
 @pytest.mark.run(order=2)
 def test_structured_logger_without_json_renderer():
     logger = StructLogTelemetry(
-        app_name="simple_logger", app_version="v0.0.1", json_renderer=False
+        app_name="simple_logger", app_version="v0.0.1"
     )
     call_logger(logger)
