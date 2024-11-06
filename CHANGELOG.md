@@ -1,5 +1,55 @@
 # Changelog
 
+## [0.0.18](https://github.com/cyber-francis/structlog_telemetry/compare/v0.1.0...v0.0.18) (2024-11-06)
+
+
+### chore
+
+* release 0.0.1 ([8bfff74](https://github.com/cyber-francis/structlog_telemetry/commit/8bfff74fa82f90e35275e0e384a591a8575c3b14))
+* release 0.0.1 ([cd1e991](https://github.com/cyber-francis/structlog_telemetry/commit/cd1e991edc02085339bed3c0df347f66d6b7a0bd))
+* release 0.0.18 ([d6df93c](https://github.com/cyber-francis/structlog_telemetry/commit/d6df93c4fb5dd9fcb4bc4b669cf949228bfde552))
+* release 0.0.2 ([1cdbcf3](https://github.com/cyber-francis/structlog_telemetry/commit/1cdbcf3082b4bcfbc303ac697ad05ca27b87b3bd))
+* release 0.0.2 ([e245e72](https://github.com/cyber-francis/structlog_telemetry/commit/e245e72759891811d8c4ac2e7cd309f7170e3770))
+
+
+### Features
+
+* updated log ([39002b4](https://github.com/cyber-francis/structlog_telemetry/commit/39002b4e6dc4d062d5db7305f4e7afb7a56b1b5a))
+* updated workflow ([56711ec](https://github.com/cyber-francis/structlog_telemetry/commit/56711ec8eb28357e2ed00660b1a9db3d5b730a16))
+* updated workflow ([9267298](https://github.com/cyber-francis/structlog_telemetry/commit/9267298ca4236b4e65364667ad70502619fd74c2))
+* updated workflow ([b9af494](https://github.com/cyber-francis/structlog_telemetry/commit/b9af494e1f8ecf9e871ccee10b46daef2a704ebb))
+* updated workflow ([d11ded0](https://github.com/cyber-francis/structlog_telemetry/commit/d11ded0c5841f00afa394dedec943d23fa8075a3))
+* updated workflow ([c6fc06e](https://github.com/cyber-francis/structlog_telemetry/commit/c6fc06ee9ee3867755a4018a172376bd6de045ea))
+* updated workflow ([2bcf0fe](https://github.com/cyber-francis/structlog_telemetry/commit/2bcf0fe5412c3e867617da1bc8ed77a51f9beacd))
+
+
+### Bug Fixes
+
+* added banner ([32cacff](https://github.com/cyber-francis/structlog_telemetry/commit/32cacff85250dd2a8adb857e2141412252e2b0a0))
+* added banner ([36ffb7f](https://github.com/cyber-francis/structlog_telemetry/commit/36ffb7fed30b5ca79d0d2414611c06f469ad7d6d))
+* added banner ([14a423e](https://github.com/cyber-francis/structlog_telemetry/commit/14a423ecd79559bb414931cd5fbe394c7a9529f3))
+* added banner ([479773f](https://github.com/cyber-francis/structlog_telemetry/commit/479773f12d815011c85b12a170401a7139293d42))
+* added banner ([e4e680a](https://github.com/cyber-francis/structlog_telemetry/commit/e4e680abb895544e679680f5ed96756fcc620e65))
+* added banner ([712545a](https://github.com/cyber-francis/structlog_telemetry/commit/712545a3bb194a9bf292ba4a532aafa18e556072))
+* added banner ([aa89232](https://github.com/cyber-francis/structlog_telemetry/commit/aa89232d1519a045005cc552d4a3d695f85f6066))
+* added banner ([6be17f6](https://github.com/cyber-francis/structlog_telemetry/commit/6be17f6470542f00b83f9369a16c635bf15927b6))
+* added banner ([09d0c95](https://github.com/cyber-francis/structlog_telemetry/commit/09d0c95c5ccfd15bcc5ec9377d31435994fed80c))
+* added banner ([519044a](https://github.com/cyber-francis/structlog_telemetry/commit/519044a26d440194bb3eb9eb39f5e5c21a14800c))
+* added banner ([d07a784](https://github.com/cyber-francis/structlog_telemetry/commit/d07a784017efb00d865f5dab5f4e4121bbf5f2ba))
+* added version tracking ([1718190](https://github.com/cyber-francis/structlog_telemetry/commit/17181907ae1e4b04a0c15481268afd3e99f70fed))
+* added version tracking ([702abbd](https://github.com/cyber-francis/structlog_telemetry/commit/702abbd897c0594d0457091e3d03744a6a7be13e))
+* added version tracking ([027e1ad](https://github.com/cyber-francis/structlog_telemetry/commit/027e1adaf379278405a1e1d67b177f5543ef997e))
+* bug ([9711b09](https://github.com/cyber-francis/structlog_telemetry/commit/9711b09eb7d110105ac446e75aa60bf080abd61c))
+* bug ([9c55526](https://github.com/cyber-francis/structlog_telemetry/commit/9c55526d6a71977ab939b0637d0deeb0fb7d36a0))
+* removed test file ([272135c](https://github.com/cyber-francis/structlog_telemetry/commit/272135c1962d1f517618074da7660146541826dd))
+* updated banner ([486d984](https://github.com/cyber-francis/structlog_telemetry/commit/486d984d768ac3421cf3cb334b063bff46708605))
+* updated banner ([3d733e3](https://github.com/cyber-francis/structlog_telemetry/commit/3d733e3b0bbdbf9ac7e066021c55be857054a324))
+* updated return type ([0adf1a2](https://github.com/cyber-francis/structlog_telemetry/commit/0adf1a2dd976b2bf52059ff38e2009a8d94e9e7e))
+* updated singleton ([40abc36](https://github.com/cyber-francis/structlog_telemetry/commit/40abc36855f91aae6fe9092be847b9f047118353))
+* updated structlog ([8b464e8](https://github.com/cyber-francis/structlog_telemetry/commit/8b464e859679c43563aede343152c4693939f862))
+* updated structlog telemetry class ([e509335](https://github.com/cyber-francis/structlog_telemetry/commit/e509335fcf9ef62dfbb26e2d0713f6c3824ce6f0))
+* updated workflow ([7d7cbc0](https://github.com/cyber-francis/structlog_telemetry/commit/7d7cbc0974c2f0397e91af958f75da18988fd285))
+
 ## [0.1.0](https://github.com/cyber-francis/structlog_telemetry/compare/v0.0.32...v0.1.0) (2024-11-06)
 
 
