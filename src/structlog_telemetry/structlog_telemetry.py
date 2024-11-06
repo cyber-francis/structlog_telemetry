@@ -7,7 +7,6 @@ import os
 class StructLogTelemetry(Singleton):
     __app_name = None
     __app_version = None
-    __log_name = None
     __logger = None
     __is_initialized = False
 
@@ -41,7 +40,6 @@ class StructLogTelemetry(Singleton):
                 structlog.processors.JSONRenderer(),
             ]
         )
-
 
 
     def debug(self, value):
