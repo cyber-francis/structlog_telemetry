@@ -1,4 +1,3 @@
-
 class Singleton(object):
     _instance = None
 
